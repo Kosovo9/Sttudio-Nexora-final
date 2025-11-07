@@ -1,0 +1,44 @@
+{
+  "common": {
+    "welcome": "Welcome to Studio Nexora",
+    "description": "Create professional studio photos with AI",
+    "createPhoto": "Create Studio Photo",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "language": "Language",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "navigation": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "auth": {
+    "signInWithEmail": "Sign in with email",
+    "signInWithGoogle": "Sign in with Google",
+    "emailPlaceholder": "your@email.com",
+    "passwordPlaceholder": "Password",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signup": "Sign Up",
+    "login": "Log In",
+    "logout": "Log Out",
+    "profile": "Profile"
+  },
+  "studio": {
+    "title": "AI Photo Studio",
+    "subtitle": "Transform your photos into professional portraits",
+    "uploadTitle": "Upload your photo",
+    "uploadDescription": "Select a high-quality photo for best results",
+    "selectStyle": "Select a style",
+    "generateButton": "Generate Studio Photo",
+    "processing": "Processing your photo...",
+    "downloadButton": "Download"
+  }
+}

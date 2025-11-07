@@ -1,0 +1,44 @@
+{
+  "common": {
+    "welcome": "Bienvenido a Studio Nexora",
+    "description": "Crea fotos de estudio profesionales con IA",
+    "createPhoto": "Crear Foto de Estudio",
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "logout": "Cerrar Sesión",
+    "language": "Idioma",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "gallery": "Galería",
+    "pricing": "Precios",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "auth": {
+    "signInWithEmail": "Iniciar sesión con email",
+    "signInWithGoogle": "Iniciar sesión con Google",
+    "emailPlaceholder": "tu@email.com",
+    "passwordPlaceholder": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "signup": "Registrarse",
+    "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "profile": "Perfil"
+  },
+  "studio": {
+    "title": "Studio de Fotos IA",
+    "subtitle": "Transforma tus fotos en retratos profesionales",
+    "uploadTitle": "Sube tu foto",
+    "uploadDescription": "Selecciona una foto de alta calidad para mejores resultados",
+    "selectStyle": "Selecciona un estilo",
+    "generateButton": "Generar Foto de Estudio",
+    "processing": "Procesando tu foto...",
+    "downloadButton": "Descargar"
+  }
+}
