@@ -417,7 +417,7 @@ export async function GET(request: NextRequest): Promise<NextResponse<AdminStats
     const now = new Date();
     const timeRanges = calculateTimeRanges(timeRange);
     
-    const ranges = calculateDateRanges(timeRange);
+    const ranges = calculateTimeRanges(timeRange);
 
     // Gather comprehensive statistics
     const [
