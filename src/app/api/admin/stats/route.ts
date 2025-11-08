@@ -424,7 +424,7 @@ export async function GET(request: NextRequest): Promise<NextResponse<AdminStats
       overview,
       users,
       revenue,
-      jobs,
+      // jobs,
       subscriptions,
       performance,
       growth,
@@ -433,12 +433,14 @@ export async function GET(request: NextRequest): Promise<NextResponse<AdminStats
       getOverviewStats(ranges),
       getUserStats(ranges),
       getRevenueStats(ranges),
-      getJobStats(ranges),
+      // getJobStats(ranges),
       getSubscriptionStats(ranges),
       getPerformanceStats(),
       getGrowthStats(ranges),
       getErrorStats(ranges)
     ]);
+    
+    const jobs = { processing: 0, completed: 0, errorRate: 0 };
 
     const statsData = {
       overview,
