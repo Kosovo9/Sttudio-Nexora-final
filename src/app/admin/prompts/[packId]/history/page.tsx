@@ -34,7 +34,7 @@ export default function Page(){
                 <td className='flex gap-2'>
                   <button className='rounded border border-white/20 px-2 py-1 text-xs' onClick={async()=>{
                     if(!confirm('¿Restaurar a esta versión?')) return;
-                    const r = await fetch('/api/admin/prompts/version/restore',{ method:'POST', headers:{'Content-Type':'application/json', ...csrfHeader()}, body: JSON.stringify({ version_id: v.id })});
+                    const r = await fetch('/api/admin/prompts/version/restore',{ method:'POST', headers:{'Content-Type':'application/json', ...(csrfHeader()['X-CSRF-Token'] ? { 'X-CSRF-Token': csrfHeader()['X-CSRF-Token'] } : {})}, body: JSON.stringify({ version_id: v.id })});
                     const j = await r.json(); alert(j.error||('Restaurado ('+j.count+' items)'));
                   }}>Restore</button>
                 </td>
