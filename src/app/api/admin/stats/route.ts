@@ -423,24 +423,23 @@ export async function GET(request: NextRequest): Promise<NextResponse<AdminStats
     const [
       overview,
       users,
-      revenue,
-      // jobs,
-      subscriptions,
-      performance,
-      growth,
-      errors
+      revenue
     ] = await Promise.all([
       getOverviewStats(ranges),
       getUserStats(ranges),
-      getRevenueStats(ranges),
+      getRevenueStats(ranges)
       // getJobStats(ranges),
-      getSubscriptionStats(ranges),
-      getPerformanceStats(),
-      getGrowthStats(ranges),
-      getErrorStats(ranges)
+      // getSubscriptionStats(ranges),
+      // getPerformanceStats(),
+      // getGrowthStats(ranges),
+      // getErrorStats(ranges)
     ]);
     
     const jobs = { processing: 0, completed: 0, errorRate: 0 };
+    const subscriptions = { active: 0, total: 0, revenue: 0 };
+    const performance = { avgResponseTime: 0, uptime: 100 };
+    const growth = { userGrowth: 0, revenueGrowth: 0 };
+    const errors = { count: 0, rate: 0 };
 
     const statsData = {
       overview,
