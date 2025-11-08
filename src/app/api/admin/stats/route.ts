@@ -124,7 +124,7 @@ interface OverviewStats {
   processingJobs: number;
   completedJobs: number;
   errorRate: number;
-  systemHealth: string;
+  systemHealth: 'healthy' | 'warning' | 'critical';
 }
 
 interface UserStats {
@@ -796,7 +796,7 @@ function getDefaultOverviewStats(): OverviewStats {
     processingJobs: 0,
     completedJobs: 0,
     errorRate: 0,
-    systemHealth: 'unknown',
+    systemHealth: 'warning',
   };
 }
 
